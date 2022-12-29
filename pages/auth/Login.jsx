@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { LockClosedIcon } from "@heroicons/react/20/solid";
 import logo from "../../public/amason.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const Login = () => {
 	const { register, handleSubmit, reset } = useForm();
