@@ -10,17 +10,14 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const user = {
-	imageUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+	imageUrl: "https://e7.pngegg.com/pngimages/981/645/png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette-thumbnail.png",
 };
 const navigation = [
 	{ id: 3, name: "Home", href: "/", current: false },
 	{ id: 1, name: "Services", href: "/Services", current: false },
 	{ id: 2, name: "Purchases", href: "/Purchases", current: false },
 ];
-const userNavigation = [
-	{ id: 3, name: "Your Profile", href: "#" },
-	{ id: 2, name: "Help", href: "#" },
-];
+const userNavigation = [{ id: 1, name: "Help", href: "/help" }];
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(" ");
@@ -186,6 +183,44 @@ export default function NavBar() {
 																	)}
 																</Menu.Item>
 															)
+														)}
+														{token ? (
+															<Menu.Item
+																onClick={
+																	logout
+																}
+																as="a"
+																className={
+																	"hover:bg-gray-100 cursor-pointer block px-4 py-2 text-sm text-gray-700"
+																}
+															>
+																Log
+																out
+															</Menu.Item>
+														) : (
+															<>
+																<Link href="/auth/Login">
+																	<Menu.Item
+																		as="a"
+																		className={
+																			"hover:bg-gray-100 cursor-pointer block px-4 py-2 text-sm text-gray-700"
+																		}
+																	>
+																		Sign
+																		Up
+																	</Menu.Item>
+																</Link>
+																<Link href="/auth/Register">
+																	<Menu.Item
+																		as="a"
+																		className={
+																			"hover:bg-gray-100 cursor-pointer block px-4 py-2 text-sm text-gray-700"
+																		}
+																	>
+																		Register
+																	</Menu.Item>
+																</Link>
+															</>
 														)}
 													</Menu.Items>
 												</Transition>
