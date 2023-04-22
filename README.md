@@ -1,34 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+![Logo](https://i.imgur.com/VP71pFc.png)
 
-First, run the development server:
+# Amazon Clone (Amason)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Full-Stack personal Project built entirely from scratch on Javascript (React & NodeJS) I worked on this project creating the database, models and relations on the backend and creating all the user experience and structure of the front-end
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Official Deployment
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+See the live version in this link
+[www.amason.com](https://amason.vercel.app/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Author
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [@JordiM21](https://www.github.com/JordiM21)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Client:** Javascript, React, NextJS, MUI, Tailwind, Redux
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Server:** NodeJS, Express, Sequelize, PostgreSQL
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Completely responsive behavior mobile/desktop friendly 
+
+- Filter by category
+
+- Login and register user in order to buy products
+
+- Add as much product as you want to your cart and see the total price on real time
+
+- Search Bar by tittle of product
+
+- When looking at the details, you can see related products that you may like
+
+- After each purchase to the cart you can see you history of purchases on the section
+
+- Delete products from cart and log out each time you want
+
+- The cart is saved with redux and your account so if you let the items on your cart and log out, the next time you enter, they'll be there!
+
+## Screenshots
+
+- View Home Page **(Desktop and mobile)**
+
+![App Screenshot](https://i.imgur.com/UKib1Hz.png)
+![App Screenshot](https://i.imgur.com/wfLkw5q.png)
+![App Screenshot](https://i.imgur.com/AsuidOW.png)
+![App Screenshot](https://i.imgur.com/Jwt7cAH.png)
